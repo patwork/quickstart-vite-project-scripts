@@ -11,6 +11,7 @@ Scripts to help you pre-configure your vite project.
 | 060-npm-pkg&period;sh | ![npm](https://avatars.githubusercontent.com/u/6078720?s=64&v=4) |
 | 070-pre-commit&period;sh | ![git](https://avatars.githubusercontent.com/u/18133?s=64&v=4) |
 | 100-tailwindcss&period;sh | ![tailwindcss](https://avatars.githubusercontent.com/u/67109815?s=64&v=4) |
+| 110-bootstrap&period;sh | ![bootstrap](https://avatars.githubusercontent.com/u/2918581?s=64&v=4) |
 
 Directory structure:
 ```
