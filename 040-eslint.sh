@@ -27,7 +27,7 @@ npx eslint --init
 figlet config
 npx json -I -f .eslintrc.json \
   -e 'this.parserOptions.project="./tsconfig.json"' \
-  -e 'this.extends=[ "standard-with-typescript", "airbnb", "airbnb/hooks", "airbnb-typescript", "plugin:import/recommended", "plugin:jsx-a11y/recommended", "plugin:promise/recommended", "plugin:react/recommended", "plugin:react-hooks/recommended" ]' \
+  -e 'this.extends=[ "standard-with-typescript", "airbnb", "airbnb/hooks", "airbnb-typescript", "plugin:import/recommended", "plugin:jsx-a11y/recommended", "plugin:promise/recommended", "plugin:react/recommended", "plugin:react-hooks/recommended", "plugin:react/jsx-runtime" ]' \
   -e 'this.plugins=[ "import", "jsx-a11y", "promise", "react", "react-hooks" ]'
 
 figlet pkg
