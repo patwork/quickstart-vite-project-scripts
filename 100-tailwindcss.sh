@@ -27,3 +27,9 @@ done
 figlet css
 test -f src/index.css && mv src/index.css src/index.css.`date +%s`.bak
 echo -e "@tailwind base;\n@tailwind components;\n@tailwind utilities;" > src/index.css
+
+figlet stylelint
+if test -f .stylelintrc.json ; then
+  npm i -D stylelint-config-tailwindcss
+  npx json -I -f .stylelintrc.json -e 'this.extends=["stylelint-config-standard-scss","stylelint-config-tailwindcss/scss"]'
+fi
