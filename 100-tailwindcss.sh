@@ -30,6 +30,6 @@ echo -e "@tailwind base;\n@tailwind components;\n@tailwind utilities;" > src/ind
 
 figlet stylelint
 if test -f .stylelintrc.json ; then
-  npm i -D stylelint-config-tailwindcss
+  npm i -D stylelint-config-tailwindcss@latest
   npx json -I -f .stylelintrc.json -e 'this.extends=["stylelint-config-standard-scss","stylelint-config-tailwindcss/scss"]'
 fi
