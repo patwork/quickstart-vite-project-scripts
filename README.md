@@ -10,7 +10,7 @@ Scripts to help you pre-configure your vite project.
 | 050-stylelint&period;sh | ![stylelint](https://avatars.githubusercontent.com/u/10076935?s=64&v=4) |
 | 060-npm-pkg&period;sh | ![npm](https://avatars.githubusercontent.com/u/6078720?s=64&v=4) |
 | 070-pre-commit&period;sh | ![git](https://avatars.githubusercontent.com/u/18133?s=64&v=4) |
-| 100-tailwindcss&period;sh | ![git](https://avatars.githubusercontent.com/u/67109815?s=64&v=4) |
+| 100-tailwindcss&period;sh | ![tailwindcss](https://avatars.githubusercontent.com/u/67109815?s=64&v=4) |
 
 Directory structure:
 ```
