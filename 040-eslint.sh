@@ -25,7 +25,9 @@ figlet prettier
 npm i -D eslint-config-prettier@latest
 
 figlet init
-npx eslint --init
+if test ! -f ./.eslintrc.json ; then
+  npx eslint --init
+fi
 
 figlet config
 npx json -I -f .eslintrc.json \
