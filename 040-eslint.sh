@@ -21,14 +21,18 @@ npm i -D eslint-plugin-react@latest eslint-plugin-react-hooks@latest eslint-plug
 figlet airbnb
 npm i -D eslint-config-airbnb@latest eslint-config-airbnb-typescript@latest
 
+figlet prettier
+npm i -D eslint-config-prettier@latest
+
 figlet init
 npx eslint --init
 
 figlet config
 npx json -I -f .eslintrc.json \
   -e 'this.parserOptions.project="./tsconfig.json"' \
-  -e 'this.extends=[ "standard-with-typescript", "airbnb", "airbnb/hooks", "airbnb-typescript", "plugin:import/recommended", "plugin:jsx-a11y/recommended", "plugin:promise/recommended", "plugin:react/recommended", "plugin:react-hooks/recommended", "plugin:react/jsx-runtime" ]' \
-  -e 'this.plugins=[ "import", "jsx-a11y", "promise", "react", "react-hooks" ]'
+  -e 'this.extends=[ "standard-with-typescript", "airbnb", "airbnb/hooks", "airbnb-typescript", "plugin:import/recommended", "plugin:promise/recommended", "plugin:react/recommended", "plugin:react/jsx-runtime", "plugin:react-hooks/recommended", "plugin:jsx-a11y/recommended", "prettier" ]' \
+  -e 'this.plugins=[ "import", "promise", "react", "react-hooks", "jsx-a11y" ]' \
+  -e 'this.overrides=[ { "files": "./src/vite-env.d.ts", "rules": { "@typescript-eslint/triple-slash-reference": "off" } } ]'
 
 figlet pkg
 npm pkg set scripts.lint:js="eslint src/"
