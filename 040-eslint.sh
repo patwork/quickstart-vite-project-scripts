@@ -38,3 +38,4 @@ npx json -I -f .eslintrc.json \
 
 figlet pkg
 npm pkg set scripts.lint:js="eslint src/"
+npm pkg set scripts.lint:js:fix="eslint src/ --fix"

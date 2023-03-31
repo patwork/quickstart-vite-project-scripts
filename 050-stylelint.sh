@@ -15,3 +15,4 @@ npx json -I -f .stylelintrc.json -e 'this.extends="stylelint-config-standard-scs
 
 figlet pkg
 npm pkg set scripts.lint:css="stylelint 'src/**/*.css'"
+npm pkg set scripts.lint:css:fix="stylelint 'src/**/*.css' --fix"
