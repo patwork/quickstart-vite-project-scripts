@@ -1,29 +1,48 @@
 # quickstart-vite-project-scripts
-Scripts to help you pre-configure your vite project.
+
+scripts to help you pre-configure your vite project
 
 | Script | Settings |
 | ------ | -------- |
-| 010-init&period;sh | ![vite](https://avatars.githubusercontent.com/u/65625612?s=64&v=4) ![git](https://avatars.githubusercontent.com/u/18133?s=64&v=4) |
-| 020-editorconfig&period;sh | ![editorconfig](https://avatars.githubusercontent.com/u/1165674?s=64&v=4) |
-| 030-husky&period;sh | ![husky](https://avatars.githubusercontent.com/u/5502029?s=64&v=4) |
-| 040-eslint&period;sh | ![eslint](https://avatars.githubusercontent.com/u/6019716?s=64&v=4) ![typescript](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/64px-Typescript_logo_2020.svg.png) ![react](https://avatars.githubusercontent.com/u/6412038?s=64&v=4) ![airbnb](https://avatars.githubusercontent.com/u/698437?s=64&v=4) |
-| 050-stylelint&period;sh | ![stylelint](https://avatars.githubusercontent.com/u/10076935?s=64&v=4) |
-| 060-npm-pkg&period;sh | ![npm](https://avatars.githubusercontent.com/u/6078720?s=64&v=4) |
-| 070-pre-commit&period;sh | ![git](https://avatars.githubusercontent.com/u/18133?s=64&v=4) |
-| 100-tailwindcss&period;sh | ![tailwindcss](https://avatars.githubusercontent.com/u/67109815?s=64&v=4) |
-| 110-bootstrap&period;sh | ![bootstrap](https://avatars.githubusercontent.com/u/2918581?s=64&v=4) |
+| 0100-create.sh     | Create Vite App (react-ts) |
+| 0110-init.sh       | Husky |
+| 0120-configs.sh    | Editorconfig |
+| 0130-prettier.sh   | Prettier (Tailwind & Organize Imports) |
+| 0140-eslint.sh     | Eslint (TypeScript & Prettier) |
+| 0200-cleanup.sh    | General cleanup and formatting |
+| 1000-bootstrap.sh  | General cleanup and formatting |
 
-Directory structure:
+default settings
+
+- pnpm
+- react
+- typescript
+
+pnpm scripts
+
 ```
-. root
-|-- quickstart-vite-project-scripts/
-|    |-- 010-init.sh
-|    |-- 020-editorconfig.sh
-|    |-- 030-husky.sh
-|    \-- ...
-|-- www/
-|    |-- .git/
-|    |-- package.json
-|    \-- ...
+"dev": "vite",
+"build": "tsc && vite build",
+"lint": "eslint .",
+"preview": "vite preview",
+"prepare": "husky",
+"format": "prettier --check .",
+"format:fix": "prettier --write ."
 ```
 
+devDependencies
+
+- @typescript-eslint/eslint-plugin
+- @typescript-eslint/parser
+- eslint
+- eslint-config-prettier
+- eslint-plugin-import
+- eslint-plugin-jsx-a11y
+- eslint-plugin-promise
+- eslint-plugin-react
+- eslint-plugin-react-hooks
+- eslint-plugin-react-refresh
+- husky
+- prettier
+- prettier-plugin-organize-imports
+- prettier-plugin-tailwindcss
