@@ -6,7 +6,6 @@
 pnpm install -D \
 	@typescript-eslint/parser@latest \
 	@typescript-eslint/eslint-plugin@latest \
-	eslint-plugin-import@latest \
 	eslint-plugin-promise@latest \
 	eslint-plugin-react@latest \
 	eslint-plugin-react-hooks@latest \
@@ -22,7 +21,6 @@ echo "module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended-type-checked',
     'plugin:@typescript-eslint/stylistic-type-checked',
-    'plugin:import/recommended',
     'plugin:promise/recommended',
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',

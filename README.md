@@ -7,7 +7,7 @@ scripts to help you pre-configure your vite project
 | 0100-create.sh     | Create Vite App (react-ts) |
 | 0110-init.sh       | Husky |
 | 0120-configs.sh    | Editorconfig |
-| 0130-prettier.sh   | Prettier (Tailwind & Organize Imports) |
+| 0130-prettier.sh   | Prettier |
 | 0140-eslint.sh     | Eslint (TypeScript & Prettier) |
 | 0200-cleanup.sh    | General cleanup and formatting |
 | 1000-bootstrap.sh  | General cleanup and formatting |
@@ -32,11 +32,8 @@ pnpm scripts
 
 devDependencies
 
-- @typescript-eslint/eslint-plugin
-- @typescript-eslint/parser
 - eslint
 - eslint-config-prettier
-- eslint-plugin-import
 - eslint-plugin-jsx-a11y
 - eslint-plugin-promise
 - eslint-plugin-react
@@ -45,4 +42,5 @@ devDependencies
 - husky
 - prettier
 - prettier-plugin-organize-imports
-- prettier-plugin-tailwindcss
+- @typescript-eslint/eslint-plugin
+- @typescript-eslint/parser
