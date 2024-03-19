@@ -10,7 +10,7 @@ scripts to help you pre-configure your vite project
 | 0130-prettier.sh   | Prettier |
 | 0140-eslint.sh     | Eslint (TypeScript & Prettier) |
 | 0200-cleanup.sh    | General cleanup and formatting |
-| 1000-bootstrap.sh  | General cleanup and formatting |
+| 1000-bootstrap.sh  | Bootstrap 5+ |
 
 default settings
 
